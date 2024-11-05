@@ -1,0 +1,331 @@
+
+nav{
+    /* margin-left: 30px;
+    margin-right: 25px; */
+    margin-top: 15px;
+    background-color: white;
+    padding-bottom: 30px;
+
+
+    display: flex;
+    justify-content: space-evenly; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+      
+   
+
+}
+
+
+ul{
+    float: right;
+}
+
+li {
+    display: inline;
+    
+}
+
+h2{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background-color: #FDC435;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 55px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+
+li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 45px;
+}
+
+
+li a:hover{
+   
+    text-decoration: none;
+    font-size: 18px;
+    color: blue;
+    font-weight: 700;
+   
+}
+
+
+/* end of nav bar */
+
+header{
+    
+   
+    background-image: url(./images/image\ \(2\).png);
+    background-position: right;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    justify-content: space-around; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    /* height: 100vh;  */
+     /* Full viewport height */
+    margin-bottom: 64px;
+    
+}
+
+.leftside{
+    float: left;
+    
+}
+
+.rightside{
+    float: right;
+    width: 500px;
+   
+}
+
+
+
+
+
+/* text animation */
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 200px;
+    
+
+}
+
+
+.animated-text span{
+    position: relative;
+
+}
+
+.animated-text span::before{
+    content: "Full Stack Engineer";
+    color: rgb(198, 9, 9);
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px) ;
+    height: 100%;
+    background-color: rgb(221, 244, 251);
+    border-left:  2px solid rgb(198, 9, 9);
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid rgb(198, 9, 9);
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content:"Full Stack developer..";
+    }
+
+    21%,40%{
+        content:"Front End developer..";
+    }
+
+    41%,60%{
+        content:"back end developer..";
+    }
+
+    61%,80%{
+        content:"Android developer..";
+    }
+
+    81%,100%{
+        content:"Programming instructor..";
+    }
+    
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,60%,65%,80%,85%{
+        width: calc(100% +8px);
+    }
+}
+
+
+
+/* end of text animation */
+
+.primarybutton{
+    color:  black;
+    background-color: #FDC435;
+    width: 150px;
+    height: 60px;
+    border-radius: 25px;
+    border-color: green;
+    margin-top: 50px;
+    text-align: center;
+    font-size: medium;
+    
+}
+
+
+/* end of header */
+
+/* start projects */
+
+h3{
+    font-size: 50px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+   
+}
+.rectangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+/* each project */
+.eachproject{
+    display: flex;
+    justify-content: space-around; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    background-color: #FDC435;
+    border-radius: 55px;
+    height: 500px;
+
+    margin-bottom: 25px;
+    
+
+}
+
+
+.rightsideproject{
+    float: right;
+    width: 600px;
+   /* border-radius: 25%; */
+   border-radius: 15%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+
+h4{
+    font-size: 40px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+p{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+
+
+.secondarybutton{
+ 
+
+     background-color: #ed964f;
+     border-radius: 55px;
+     border-style: solid ;
+     width: 350px;
+     height: 70px;
+     font-size: 18px;
+     color: black;
+     text-align: center; 
+     border-color: black brown rgb(10, 10, 10) brown;
+     border-width: 8px;
+     /* to make button in center */
+     display: block;
+     margin: auto;
+     margin-top: 50px;
+     margin-bottom: 100px;
+     cursor: pointer;
+
+
+   
+    
+
+}
+
+.secondarybutton:hover {
+    background-color: #1462cf; /* Darker shade on hover */
+}
+
+.contacticons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+
+
+/* categories */
+.categories{
+    display: flex;
+    background-color: #FDC435;
+    border-radius: 55px;
+    justify-content: center;
+    height: 500px;
+
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+
+
+/* 
+.image-container:hover img {
+    opacity: 0.7;
+    
+} */
+
+.coursescontainer{
+    display: flex;
+}
+ .categories{
+    display: flex;
+    width: 100%;
+ 
+    
+
+ }
+
+ .course{
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 55px;
+    background-color: #be901a;
+ }
+ 
+ .image-container{
+    width: 40%;
+    height: 100%;
+ }
+
+.imgcategory{
+    width: 400px; /* Set the size of the image */
+    height: 300px; /* Set the size of the image */
+    border-radius: 25%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+
+.imgcourse{
+    width: 450px; /* Set the size of the image */
+    height: 300px; /* Set the size of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
